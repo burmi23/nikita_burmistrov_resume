@@ -1,13 +1,14 @@
 .header__burger
   display: none
   position: relative
+  // position: fixed
   padding: 0
   width: 40px
   height: 40px
-  background-color: transparent
+  background-color: #fff
   border-radius: 9px
-  // border: 1px solid black
-  border: none
+  border: 1px solid #fff
+  // border: none
   // outline: none
   cursor: pointer
   color: #000
@@ -16,6 +17,7 @@
   position: absolute
   left: 50%
   width: 100%
+  width: 70%
   height: 3px
   border-radius: inherit
   background: currentColor
@@ -41,7 +43,7 @@
 // active
 
 .burger--active .header__burger-line:nth-child(1)
-  left: 0%
+  left: 15%
   top: 50%
   transform: rotate(45deg)
   transition: transform .3s ease-in-out, left .3s ease-in-out, top .3s ease-in-out
@@ -52,7 +54,7 @@
 
 .burger--active .header__burger-line:nth-child(3)
   bottom: auto
-  left: 0%
+  left: 15%
   top: 50%
   transform: rotate(-45deg)
   transition: transform .3s ease-in-out, left .3s ease-in-out, top .3s ease-in-out
