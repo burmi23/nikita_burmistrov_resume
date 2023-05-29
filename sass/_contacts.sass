@@ -16,7 +16,6 @@
   text-align: center
 
 .contacts__button
-  position: relative
   display: block
   margin: 0 auto
   width: 180.5px
@@ -42,34 +41,33 @@
     color: #fff
     background-color: var(--clr-still)
 
-  &::before
-    content: ' '
-    position: absolute
-    left: -5px
-    right: -5px
-    bottom: -5px
-    top: -5px
-    padding: 2px
-    border: 1px solid #000
-    border-radius: inherit
-    opacity: 0
+  // &::before
+  //   content: ' '
+  //   position: absolute
+  //   left: -5px
+  //   right: -5px
+  //   bottom: -5px
+  //   top: -5px
+  //   padding: 2px
+  //   border: 1px solid #000
+  //   border-radius: inherit
+  //   opacity: 0
 
-  &:focus::before
-    opacity: 1
+  // &:focus::before
+  //   opacity: 1
 
-  &:hover::before, &:active::before
-    opacity: 0
+  // &:hover::before, &:active::before
+  //   opacity: 0
 
 .contacts__list
-  justify-content: space-between
+  justify-content: center
+  gap: 0 60px
   margin-bottom: 46px
 
 .contacts__link
-  position: relative
   width: 50px
   height: 50px
   transition: fill .3s ease-in-out
-  z-index: -100
 
   &:focus .contacts__link-img
     fill: rgb(170, 170, 170)
